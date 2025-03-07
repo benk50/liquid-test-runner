@@ -25,11 +25,12 @@ describe("Liquid Email Template Tester", () => {
     });
     
     test("Handles missing template files", async () => {
-        const missingFile = "./does_not_exist.liquid";
+        const missingFileName = "does_not_exist.liquid";
+        const missingFilePath = `./${missingFileName}`;
         
-        await renderLiquid(missingFile, {})
+        await renderLiquid(missingFilePath, {})
         .catch((error) => {
-            expect(error.message).toContain(missingFile);
+            expect(error.message).toContain(missingFileName);
         });
     });
     

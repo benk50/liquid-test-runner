@@ -1,6 +1,6 @@
 {
   "name": "liquid-test-runner",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple framework to test Liquid templates in Jest",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

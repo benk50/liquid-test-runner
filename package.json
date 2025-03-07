@@ -1,0 +1,30 @@
+{
+  "name": "liquid-test-runner",
+  "version": "1.0.0",
+  "description": "A simple framework to test Liquid templates in Jest",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build",
+    "render": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "liquidjs": "^10.21.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benk50/liquid-test-runner.git"
+  },
+  "keywords": ["Shopify", "Liquid", "Template", "Testing"],
+  "author": "benk50",
+  "license": "MIT"
+}
